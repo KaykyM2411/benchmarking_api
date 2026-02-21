@@ -79,11 +79,3 @@ Dicas para resultados confiáveis
 
 Contribuindo
 - Abra PRs para adicionar novas estratégias, ajustar seeds ou melhorar medidas.
-
-Licença
-- Use a licença que preferir; adicione um `LICENSE` se desejar publicar.
-
-Arquivo principal de referência: `lib/tasks/benchmark.rake` (tarefa que executa os comparativos).
-
----
-Arquivo gerado automaticamente: README atualizado para facilitar uso e contribuição.
