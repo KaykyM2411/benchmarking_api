@@ -81,7 +81,7 @@ GEM
     benchmark-ips (2.14.0)
     benchmark-memory (0.2.0)
       memory_profiler (~> 1)
-    bigdecimal (4.0.1)
+    bigdecimal (4.1.1)
     bootsnap (1.23.0)
       msgpack (~> 1.2)
     brakeman (8.0.2)
@@ -126,7 +126,7 @@ GEM
       prism (>= 1.3.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    json (2.18.1)
+    json (2.19.3)
     kamal (2.10.1)
       activesupport (>= 7.0)
       base64 (~> 0.2)
@@ -155,7 +155,8 @@ GEM
     mini_magick (5.3.1)
       logger
     mini_mime (1.1.5)
-    minitest (6.0.1)
+    minitest (6.0.3)
+      drb (~> 2.0)
       prism (~> 1.5)
     msgpack (1.8.0)
     net-imap (0.6.3)
@@ -189,7 +190,7 @@ GEM
       bigdecimal (>= 3.0)
       ostruct (>= 0.2)
     ostruct (0.6.3)
-    panko_serializer (0.8.4)
+    panko_serializer (0.8.5)
       activesupport
       oj (> 3.11.0, < 4.0.0)
     parallel (1.27.0)
@@ -385,7 +386,7 @@ CHECKSUMS
   bcrypt_pbkdf (1.1.2) sha256=c2414c23ce66869b3eb9f643d6a3374d8322dfb5078125c82792304c10b94cf6
   benchmark-ips (2.14.0) sha256=b72bc8a65d525d5906f8cd94270dccf73452ee3257a32b89fbd6684d3e8a9b1d
   benchmark-memory (0.2.0) sha256=ca1e436433b09535ee8f64f80600a5edb407cff1f6ac70e089ca238118e6ab5c
-  bigdecimal (4.0.1) sha256=8b07d3d065a9f921c80ceaea7c9d4ae596697295b584c296fe599dd0ad01c4a7
+  bigdecimal (4.1.1) sha256=1c09efab961da45203c8316b0cdaec0ff391dfadb952dd459584b63ebf8054ca
   bootsnap (1.23.0) sha256=c1254f458d58558b58be0f8eb8f6eec2821456785b7cdd1e16248e2020d3f214
   brakeman (8.0.2) sha256=7b02065ce8b1de93949cefd3f2ad78e8eb370e644b95c8556a32a912a782426a
   builder (3.3.0) sha256=497918d2f9dca528fdca4b88d84e4ef4387256d984b8154e9d5d3fe5a9c8835f
@@ -413,7 +414,7 @@ CHECKSUMS
   image_processing (1.14.0) sha256=754cc169c9c262980889bec6bfd325ed1dafad34f85242b5a07b60af004742fb
   io-console (0.8.2) sha256=d6e3ae7a7cc7574f4b8893b4fca2162e57a825b223a177b7afa236c5ef9814cc
   irb (1.17.0) sha256=168c4ddb93d8a361a045c41d92b2952c7a118fa73f23fe14e55609eb7a863aae
-  json (2.18.1) sha256=fe112755501b8d0466b5ada6cf50c8c3f41e897fa128ac5d263ec09eedc9f986
+  json (2.19.3) sha256=289b0bb53052a1fa8c34ab33cc750b659ba14a5c45f3fcf4b18762dc67c78646
   kamal (2.10.1) sha256=53b7ecb4c33dd83b1aedfc7aacd1c059f835993258a552d70d584c6ce32b6340
   language_server-protocol (3.17.0.5) sha256=fd1e39a51a28bf3eec959379985a72e296e9f9acfce46f6a79d31ca8760803cc
   lint_roller (1.1.0) sha256=2c0c845b632a7d172cb849cc90c1bce937a28c5c8ccccb50dfd46a485003cc87
@@ -424,7 +425,7 @@ CHECKSUMS
   memory_profiler (1.1.0) sha256=79a17df7980a140c83c469785905409d3027ca614c42c086089d128b805aa8f8
   mini_magick (5.3.1) sha256=29395dfd76badcabb6403ee5aff6f681e867074f8f28ce08d78661e9e4a351c4
   mini_mime (1.1.5) sha256=8681b7e2e4215f2a159f9400b5816d85e9d8c6c6b491e96a12797e798f8bccef
-  minitest (6.0.1) sha256=7854c74f48e2e975969062833adc4013f249a4b212f5e7b9d5c040bf838d54bb
+  minitest (6.0.3) sha256=88ac8a1de36c00692420e7cb3cc11a0773bbcb126aee1c249f320160a7d11411
   msgpack (1.8.0) sha256=e64ce0212000d016809f5048b48eb3a65ffb169db22238fb4b72472fecb2d732
   net-imap (0.6.3) sha256=9bab75f876596d09ee7bf911a291da478e0cd6badc54dfb82874855ccc82f2ad
   net-pop (0.1.2) sha256=848b4e982013c15b2f0382792268763b748cce91c9e91e36b0f27ed26420dff3
@@ -442,7 +443,7 @@ CHECKSUMS
   nokogiri (1.19.1-x86_64-linux-musl) sha256=4267f38ad4fc7e52a2e7ee28ed494e8f9d8eb4f4b3320901d55981c7b995fc23
   oj (3.16.15) sha256=4d3324cac3e8fef54c0fa250b2af26a16dadd9f9788a1d6b1b2098b793a1b2cd
   ostruct (0.6.3) sha256=95a2ed4a4bd1d190784e666b47b2d3f078e4a9efda2fccf18f84ddc6538ed912
-  panko_serializer (0.8.4) sha256=091c189a2b03709e5fc21dec78afbbc118f46bd699ba2f43910ab58ba0e0579d
+  panko_serializer (0.8.5) sha256=ba95efee24a3b3abe4e025b4b9f1c39944b321a53f2a4cd6c5a9d5bd6540c929
   parallel (1.27.0) sha256=4ac151e1806b755fb4e2dc2332cbf0e54f2e24ba821ff2d3dcf86bf6dc4ae130
   parser (3.3.10.2) sha256=6f60c84aa4bdcedb6d1a2434b738fe8a8136807b6adc8f7f53b97da9bc4e9357
   pp (0.6.3) sha256=2951d514450b93ccfeb1df7d021cae0da16e0a7f95ee1e2273719669d0ab9df6
